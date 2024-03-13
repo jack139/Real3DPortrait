@@ -18,6 +18,7 @@ sudo pip3.9 install pretrainedmodels
 ## 测试
 
 ```bash
+# 命令行推理
 python3.9 inference/real3d_infer.py \
 --src_img data/raw/examples/Macron.png \
 --drv_aud data/raw/examples/Obama_5s.wav \
@@ -26,5 +27,6 @@ python3.9 inference/real3d_infer.py \
 --out_name infer_out/output.mp4 \
 --out_mode final
 
+# web ui 推理
 python3.9 inference/app_real3dportrait.py
 ```
